@@ -145,12 +145,12 @@
   .phone img{width:100%; display:block; border-radius:21px;}
 
   .tip{
-    display:flex; gap:10px; background:var(--ok-soft); border-radius:12px; padding:12px 13px; margin-top:4px;
-    font-size:12.5px; color:var(--text);
+    background:var(--ok-soft); border-radius:12px; padding:12px 13px; margin-top:4px;
+    font-size:12.5px; color:var(--text); overflow:hidden;
   }
   .tip.warn{background:var(--warn-soft);}
   .tip.night{background:var(--night-soft);}
-  .tip b:first-child{white-space:nowrap;}
+  .tip b:first-child{float:left; margin-right:10px; white-space:nowrap;}
 
   table.mini{width:100%; border-collapse:collapse; font-size:12.5px; margin-top:4px;}
   table.mini th, table.mini td{text-align:left; padding:7px 8px; border-bottom:1px solid var(--hairline);}
