@@ -199,6 +199,7 @@
     <a href="#instructeur"><span class="dot"></span>Année instructeur</a>
     <a href="#carriere"><span class="dot"></span>Carrière</a>
     <a href="#planning"><span class="dot"></span>Mon planning</a>
+    <a href="#escale"><span class="dot"></span>Fiche escale</a>
     <a href="#reglages"><span class="dot"></span>Réglages</a>
   </nav>
 
@@ -208,7 +209,7 @@
     <p class="lede">Le carnet personnel du pilote Beluga XL : activités, heures de vol, PHV, congés,
       temps de service et frais réels — tout au même endroit, alimenté par ton planning.</p>
     <div class="hero-meta">
-      <div><strong>18</strong>sections</div>
+      <div><strong>19</strong>sections</div>
       <div><strong>Gratuit</strong>usage perso</div>
       <div><strong>iOS</strong>App Store / TestFlight</div>
     </div>
@@ -685,6 +686,13 @@
       (escale, kilométrique, repas, frais annexes) à partir de tes activités déjà enregistrées, et
       les compare à l'abattement forfaitaire de 10 %.</p>
 
+    <div class="tip warn"><b>⚠ À vérifier avec ton centre des impôts.</b> Un message te le rappelle à
+      chaque ouverture de cet onglet. Les montants sont indicatifs : demande à ton centre des impôts
+      ce que tu peux déduire ou non, et si les frais réels sont plus avantageux pour toi que
+      l'abattement de 10 %. Fais particulièrement attention à ton <b>véhicule de fonction</b> ou à
+      tout avantage en nature, aux <b>remboursements déjà versés</b> par ton employeur, aux frais
+      déjà pris en charge et aux <b>justificatifs à conserver</b>.</div>
+
     <div class="card">
       <h3>À régler une fois par an, avant de déclarer</h3>
       <ol class="steps">
@@ -837,6 +845,68 @@
         automatique n'a pas capté un changement — pratique pour une mise à jour ponctuelle (vol
         annulé, rotation modifiée).</p>
     </div>
+  </section>
+
+  <!-- ============================================================ FICHE ESCALE -->
+  <section id="escale">
+    <div class="s-head">
+      <div class="badge" style="background:var(--accent-soft)"><svg viewBox="0 0 24 24" fill="none" stroke="var(--text-dim)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-5.2-6-10a6 6 0 1 1 12 0c0 4.8-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg></div>
+      <h2>Fiche escale</h2>
+    </div>
+    <p class="s-sub">Les hôtels et restaurants de chaque lieu de découché, ajoutés et partagés entre
+      collègues, avec une carte pour s'y retrouver.</p>
+
+    <div class="card">
+      <h3>Choisir le lieu de découché</h3>
+      <ul class="plain">
+        <li>Les pastilles du haut proposent les escales où tu as réellement dormi (arrivée un jour,
+          départ du même terrain le lendemain). <b>＋ Autre lieu</b> te laisse chercher une ville ou
+          un code OACI.</li>
+        <li>À l'ouverture, si ton planning contient un découché à venir, le <b>lieu</b> est
+          sélectionné pour toi, ainsi que l'<b>hôtel</b> indiqué par le planning s'il est déjà dans la
+          liste. Sans découché, rien n'est présélectionné.</li>
+        <li>Choisis ton <b>hôtel</b> : c'est le point de départ des distances. Les restaurants sont
+          alors classés du plus proche au plus éloigné (en ligne droite).</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>La carte</h3>
+      <p>En bas de l'écran, une carte OpenStreetMap montre les hôtels (🏨) et les restaurants (🍽)
+        du lieu choisi. Déplace-la du doigt ; touche un repère pour voir sa fiche. Seuls les lieux
+        dont la position est connue y apparaissent.</p>
+    </div>
+
+    <div class="card">
+      <h3>Ajouter un hôtel ou un restaurant</h3>
+      <ol class="steps">
+        <li>Touche <b>＋ Ajouter un hôtel</b> ou <b>Ajouter un restaurant</b> depuis le lieu concerné.</li>
+        <li>Renseigne le <b>nom</b>, puis cherche l'<b>adresse</b> : elle donne aussi la position sur la
+          carte.</li>
+        <li>Pour un restaurant : une <b>note de qualité</b>, un <b>prix</b>, une <b>photo</b>, le site
+          web, le lien du menu et un commentaire (facultatifs).</li>
+        <li>Valide. Chaque ajout est <b>vérifié par l'administrateur</b> avant d'être visible des
+          collègues ; en attendant, il porte la mention « En attente » et toi seul le vois.</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <h3>Une fiche</h3>
+      <ul class="plain">
+        <li>Touche un hôtel ou un restaurant pour ouvrir sa fiche : adresse, note, prix, photo,
+          commentaire, <b>Site web</b> et <b>Menu</b> cliquables.</li>
+        <li><b>Y aller</b> lance l'application Plans avec l'itinéraire jusqu'au lieu.</li>
+        <li><b>Modifier cette fiche</b> : tu peux corriger tes propres fiches. Pour un restaurant déjà
+          validé, n'importe quel collègue peut aussi le compléter ou le corriger.</li>
+        <li>En bas d'une fiche de restaurant, l'<b>historique</b> indique qui l'a ajoutée et quand,
+          puis chaque modification (« modifié par » avec le trigramme et ce qui a changé). Renseigne
+          ton <b>trigramme</b> dans les Réglages pour qu'il apparaisse.</li>
+        <li><b>Signaler ce contenu</b> prévient l'administrateur si une fiche est inappropriée.</li>
+      </ul>
+    </div>
+
+    <div class="tip warn"><b>⚠</b> Avis personnels de collègues, donnés à titre indicatif : vérifie les
+      horaires, les prix et l'adresse avant de t'y rendre.</div>
   </section>
 
   <!-- ============================================================ REGLAGES -->
