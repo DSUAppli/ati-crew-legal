@@ -436,11 +436,11 @@
       <div class="text">
         <div class="card">
           <h3>Une étape de vol = une ligne</h3>
-          <p>Les colonnes suivent le carnet officiel : <b>date</b> (jj/mm/aa), <b>départ</b> (lieu +
-            heure), <b>arrivée</b> (lieu + heure), <b>avion</b> (Beluga XL + immatriculation), <b>temps
-            multi-pilote</b>, <b>temps total du vol</b> (heures et minutes, identiques à deux
-            pilotes) et <b>nom du PIC</b>. Vol, VHR 8PHV et MEP avant vol y apparaissent étape par
-            étape ; les séances Simulateur sont listées avec la mention « SIMULATEUR » (avion : « FFS »).</p>
+          <p>Les colonnes suivent le carnet officiel, avec ses termes en anglais : <b>Date</b> (dd/mm/yy),
+            <b>Departure</b> (place + time), <b>Arrival</b> (place + time), <b>Aircraft</b> (Beluga XL +
+            registration), <b>Multi-pilot time</b>, <b>Total time of flight</b> (heures et minutes,
+            identiques à deux pilotes) et <b>Name(s) PIC</b>. Vol, VHR 8PHV et MEP avant vol y apparaissent
+            étape par étape ; les séances Simulateur sont listées avec la mention « SIMULATOR » (avion : « FFS »).</p>
         </div>
         <div class="card">
           <p>En tête d'écran : tes totaux <b>Vol</b>, <b>Nuit</b> et <b>Simu</b> de l'année. Fais
@@ -453,9 +453,20 @@
       <ul class="plain">
         <li><b>Immatriculation</b> — déduite automatiquement de la dernière lettre du n° de vol
           (modifiable dans l'activité si besoin).</li>
-        <li><b>Nom du PIC</b> — le PIC est le commandant de bord. Quand tu es CDB, « SELF » s'affiche
-          (ta fonction vient de tes dates de lâché dans <a href="#carriere">Carrière</a>) ; sinon,
-          c'est le nom saisi dans l'activité (champ <b>Commandant de bord</b>).</li>
+        <li><b>Name(s) PIC</b> — le PIC est le commandant de bord : ton <b>trigramme</b> s'affiche quand
+          tu es CDB (ta fonction vient de tes dates de lâché dans <a href="#carriere">Carrière</a>) ;
+          sinon, c'est le nom saisi dans l'activité (champ <b>Commandant de bord</b>).</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Exporter en PDF pour les autorités</h3>
+      <p>Le bouton <b>PDF — carnet de vol officiel</b> génère le carnet de l'année affichée : A4 paysage,
+        mêmes colonnes numérotées que le carnet papier, vols du plus ancien au plus récent.</p>
+      <ul class="plain">
+        <li><b>Name</b> et <b>Surname</b> s'écrivent dans la fenêtre qui s'ouvre (ils sont mémorisés) et
+          s'impriment en en-tête de chaque page. Laisse-les vides pour les écrire à la main.</li>
+        <li>Chaque page porte ses totaux (<i>total this page</i>, <i>total from previous pages</i>,
+          <i>total time</i>) et la ligne <b>Pilot's signature</b> en bas, à signer.</li>
       </ul>
     </div>
     <div class="tip"><b>📅</b> Le carnet est filtré sur l'<b>année active</b> (boutons 2026 / 2025 en haut).</div>
