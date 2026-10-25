@@ -444,7 +444,7 @@
           (<b>PF</b>, l'étape compte un atterrissage dans le carnet) ou pilote surveillant (<b>PM</b>).</li>
         <li><b>Line check (LC)</b> : un interrupteur « Line check » marque un vol de contrôle en ligne.</li>
         <li><b>Vol avec instructeur (Dual)</b> : à activer quand tu voles avec un instructeur. Le temps passe alors
-          dans la colonne <i>Dual</i> du carnet au lieu de <i>PIC</i> ou <i>Co-pilot</i>.</li>
+          dans la colonne <i>Dual</i> du carnet au lieu de <i>PIC</i> ou <i>SIC</i>.</li>
         <li><b>Nom de l'instructeur</b> : en activant LC ou Dual, une fenêtre te demande le nom de l'instructeur ou
           de l'examinateur. Quand le planning en prévoit un ce jour-là (rôles TRI, TRE, LTC, LCP), son trigramme est
           proposé et prérempli. Tu peux le modifier ensuite depuis le lien affiché sous les interrupteurs.</li>
@@ -480,12 +480,12 @@
         <div class="card">
           <h3>Page 2 : conditions et fonction</h3>
           <p>Les boutons <b>Page 1 / Page 2</b>, en haut de l'écran, restent visibles quand tu fais défiler. La page 2
-            reprend la <b>nuit</b>, l'<b>IFR</b>, la <b>fonction à bord</b> (PIC, Co-pilot, Dual, Instructor), la
+            reprend la <b>nuit</b>, l'<b>IFR</b>, la <b>fonction à bord</b> (PIC, SIC, Dual, Instructor), la
             <b>séance simulateur</b> (type et durée) et les <b>remarques</b> (LC, nom de l'instructeur, signature).</p>
         </div>
         <div class="card">
-          <p>En tête d'écran : tes totaux de l'année (vol, nuit, IFR, PIC, co-pilot, dual, simu, atterrissages jour
-            et nuit). Fais défiler le tableau horizontalement pour voir toutes les colonnes.</p>
+          <p>En tête d'écran : tes <b>heures totales</b> de l'année et, si tu as des vols hors ATI, ton total <b>SEP</b>
+            (mono-pilote monomoteur). Fais défiler le tableau horizontalement pour voir toutes les colonnes.</p>
         </div>
       </div>
     </div>
@@ -533,12 +533,22 @@
       <h3>Ajouter un vol hors ATI (autre avion)</h3>
       <p>Ce bouton n'apparaît qu'après avoir choisi, dans <b>Réglages → Carnet de vol</b>, au moins une qualification :
         <b>SEP</b> (temps mono-pilote monomoteur), <b>MEP</b> (temps mono-pilote multimoteur) et/ou <b>FI / FE</b>
-        (instruction : le temps de vol est ajouté automatiquement dans la case FI, avec un interrupteur « Vol d'instruction »
-        pour l'enlever sur un vol). Les cases du formulaire s'adaptent à ces choix.</p>
+        (instruction). Les cases du formulaire s'adaptent à ces choix.</p>
+      <ul class="plain">
+        <li><b>Marque, modèle, variante</b> et <b>Immatriculation</b> : une liste déroulante propose les 5 derniers avions
+          (ou immatriculations) utilisés, un trait en pointillé, puis les autres par ordre alphabétique ; l'immatriculation
+          suit l'avion choisi. On peut toujours en saisir un nouveau : il est retenu à l'enregistrement du vol.</li>
+        <li><b>Nom du PIC</b> : ton trigramme est proposé en premier, puis les noms déjà saisis.</li>
+        <li><b>Temps de vol</b> : en touchant une case d'heures de vol vide, l'appli propose la durée heure d'arrivée −
+          heure de départ. La <b>nuit</b> est calculée toute seule d'après le lieu de départ, la date et les heures.</li>
+        <li><b>Vol d'instruction (FI / FE)</b>, désactivé par défaut : une fois activé, le temps de vol compte
+          automatiquement en FI et un champ <b>Élève</b> apparaît. L'élève s'affiche dans la colonne Remarks de l'appli
+          mais n'est pas imprimé dans le PDF. Désactivé, tout ce qui concerne l'instruction disparaît.</li>
+      </ul>
       <p>Le bouton <b>＋ Ajouter un vol hors ATI</b> permet de saisir à la main un vol sur un autre avion, avec les
         rubriques du carnet EASA : lieux et heures, avion (marque, modèle, variante, immatriculation), temps mono-pilote
         (SE / ME) et multi-pilote, nom du PIC, atterrissages jour et nuit, temps de nuit, IFR (capote et réel), règles de
-        vol, fonctions à bord (PIC, co-pilot, dual, FI), séance simulateur (FSTD) et remarques. Les durées s'écrivent
+        vol, fonctions à bord (PIC, SIC, dual, FI), séance simulateur (FSTD) et remarques. Les durées s'écrivent
         <b>1:20</b>. Ces vols apparaissent dans le carnet (touche une ligne pour la modifier) mais ne comptent ni dans
         tes HDV ni dans ton PHV d'ATI.</p>
     </div>
